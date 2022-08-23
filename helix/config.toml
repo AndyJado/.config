@@ -1,0 +1,41 @@
+theme = "everforest_dark"
+
+[editor]
+gutters = ["diagnostics", "line-numbers"]
+line-number = "absolute"
+mouse = false
+true-color = true
+idle-timeout = 200
+auto-pairs = true
+
+[editor.lsp]
+display-messages = true
+
+[editor.file-picker]
+hidden = false
+
+[editor.cursor-shape]
+#insert = "bar"
+#normal = "block"
+#select = "underline"
+normal = "underline"
+insert = "bar"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+
+[keys.normal]
+C-s = ":wa"
+C-p = "rotate_view"
+C-r = ":reload"
+
+[keys.insert]
+#j = {k = "normal_mode"}

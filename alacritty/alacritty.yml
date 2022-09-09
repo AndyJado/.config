@@ -21,6 +21,7 @@ env:
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
   TERM: alacritty
+  EDITOR: hx
 
 window:
   # Window dimensions (changes require restart)
@@ -43,8 +44,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   #padding:
-  #  x: 0
-  #  y: 0
+   # x: 0
+   # y: 0
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
   # Window decorations
@@ -121,7 +122,7 @@ font:
 
   # Italic font face
   italic:
-    family: Hack
+    family: Operator Mono
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
@@ -577,7 +578,7 @@ shell:
       }
     # Vi Mode
     - {
-        key: J,
+        key: Z,
         mods: Shift|Control,
         mode: ~Search,
         action: ToggleViMode

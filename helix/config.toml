@@ -2,6 +2,7 @@ theme = "everforest_dark"
 
 [editor]
 gutters = ["diagnostics", "line-numbers"]
+#gutters = ["diagnostics",]
 line-number = "absolute"
 mouse = false
 true-color = true
@@ -33,9 +34,10 @@ tab = "→"
 newline = "⏎"
 
 [keys.normal]
-C-s = ":wa"
-C-p = "rotate_view"
+C-s = ":w"
+C-p = "rotate_view" 
 C-r = ":reload"
+w = "repeat_last_motion"
 
 [keys.insert]
 #j = {k = "normal_mode"}

@@ -177,7 +177,7 @@ colors:
     foreground: "#CCCCCC"
   cursor:
     text: "#333333"
-    cursor: "#CCCCCC"
+    cursor: "#6699CC"
   normal:
     black: "#666666"
     red: "#CC6699"

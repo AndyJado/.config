@@ -20,7 +20,7 @@ env:
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  TERM: alacritty
+  #TERM: alacritty
   EDITOR: hx
 
 window:
@@ -240,7 +240,7 @@ live_config_reload: true
 # `/bin/fish`. Entries in `shell.args` are passed unmodified as arguments to the
 # shell.
 #
-# Default:
+Default: /bin/bash --login
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell

@@ -1,8 +1,8 @@
 theme = "everforest_dark"
 
 [editor]
-gutters = ["diagnostics", "line-numbers"]
-#gutters = ["diagnostics",]
+#gutters = ["diagnostics", "line-numbers"]
+gutters = ["diagnostics",]
 line-number = "absolute"
 mouse = false
 true-color = true
@@ -41,3 +41,9 @@ w = "repeat_last_motion"
 
 [keys.insert]
 #j = {k = "normal_mode"}
+left = "move_char_left"
+right = "move_char_right"
+down = "move_line_down"
+up = "move_line_up"
+C-a = "goto_line_start"
+C-e = "goto_line_end_newline"

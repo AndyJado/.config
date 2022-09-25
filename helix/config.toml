@@ -25,7 +25,7 @@ insert = "bar"
 [editor.whitespace.render]
 space = "all"
 tab = "all"
-newline = "none"
+newline = "all"
 
 [editor.whitespace.characters]
 space = "·"

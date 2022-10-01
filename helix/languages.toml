@@ -1,13 +1,4 @@
-
-use-grammars = { except = [ "yaml", "json" ] }  
-
-# in <config_dir>/helix/languages.toml
-
 [[grammar]]
 name = "rust"
-source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "a250c4582510ff34767ec3b7dcdd3c24e8c8aa68" }
 config.procMacro.enable = true
 
-[[grammar]]
-name = "c"
-source = { path = "/path/to/tree-sitter-c" }

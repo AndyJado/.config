@@ -1,0 +1,6 @@
+alias j='joshuto'
+alias jj='joshuto'
+alias g='gitui'
+alias gi='gitui'
+alias la='cargo run --example'
+alias shua='source .zshrc'

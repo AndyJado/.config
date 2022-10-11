@@ -1,4 +1,5 @@
 [[grammar]]
 name = "rust"
-config.procMacro.enable = true
+
+config.cargo.features = "all"
 

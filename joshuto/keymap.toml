@@ -51,6 +51,7 @@ keymap = [
 	{ keys = [ "y", "y" ],		command = "copy_files" },
 	{ keys = [ "y", "n" ],		command = "copy_filename" },
 	{ keys = [ "y", "." ],		command = "copy_filename_without_extension" },
+	{ keys = [ "i" ],		command = "copy_filepath" },
 	{ keys = [ "y", "p" ],		command = "copy_filepath" },
 	{ keys = [ "y", "d" ],		command = "copy_dirpath" },
 

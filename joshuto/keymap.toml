@@ -1,6 +1,8 @@
 [default_view]
 
 keymap = [
+	{ keys = [ "v" ],		command = ":shell gitui" },
+	{ keys = [ "e" ],		command = ":shell hx ." },
 	{ keys = [ "T" ],		command = "new_tab" },
 	{ keys = [ "ctrl+t" ],		command = "new_tab" },
 	{ keys = [ "q" ],		command = "close_tab" },

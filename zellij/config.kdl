@@ -190,6 +190,12 @@ plugins {
 //
 simplified_ui true
 
+ui {
+    pane_frames {
+        rounded_corners true
+    }
+}
+
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
 //

@@ -44,8 +44,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   #padding:
-   # x: 0
-   # y: 0
+  # x: 0
+  # y: 0
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
   # Window decorations
@@ -170,32 +170,32 @@ font:
 #draw_bold_text_with_bright_colors: false
 # Colors (Tomorrow Night)
 colors:
-  name: Visibone Alt. 2
-  author: Gutterslob
+  name: Atelierdune (light)
+  author: Chris Kempson
   primary:
-    background: "#333333"
-    foreground: "#CCCCCC"
+    background: "#fefbec"
+    foreground: "#6e6b5e"
   cursor:
-    text: "#333333"
-    cursor: "#6699CC"
+    text: "#fefbec"
+    cursor: "#6e6b5e"
   normal:
-    black: "#666666"
-    red: "#CC6699"
-    green: "#99CC66"
-    yellow: "#CC9966"
-    blue: "#6699CC"
-    magenta: "#9966CC"
-    cyan: "#66CC99"
-    white: "#CCCCCC"
+    black: "#20201d"
+    red: "#d73737"
+    green: "#60ac39"
+    yellow: "#cfb017"
+    blue: "#6684e1"
+    magenta: "#b854d4"
+    cyan: "#1fad83"
+    white: "#a6a28c"
   bright:
-    black: "#999999"
-    red: "#FF99CC"
-    green: "#CCFF99"
-    yellow: "#FFCC99"
-    blue: "#99CCFF"
-    magenta: "#CC99FF"
-    cyan: "#99FFCC"
-    white: "#FFFFFF"
+    black: "#7d7a68"
+    red: "#d73737"
+    green: "#60ac39"
+    yellow: "#cfb017"
+    blue: "#6684e1"
+    magenta: "#b854d4"
+    cyan: "#1fad83"
+    white: "#fefbec"
 cursor:
   # Cursor style
   style:
@@ -222,7 +222,7 @@ cursor:
   # the style of the active value of the normal cursor.
   #
   # See `cursor.style` for available options.
-  vi_mode_style: None
+  vi_mode_style: Block
   # Cursor blinking interval in milliseconds.
   #blink_interval: 750
   # If this is `true`, the cursor will be rendered as a hollow box when the
@@ -699,4 +699,4 @@ shell:
     #log_level: Warn
     # Print all received window events.
     #print_events: false
-theme: Visibone-alt-2
+theme: Atelierdune.light

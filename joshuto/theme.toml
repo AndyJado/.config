@@ -1,5 +1,5 @@
 [selection]
-fg = "black"
+fg = "white"
 bold = true
 [selection.prefix]
 prefix = "  "
@@ -10,7 +10,7 @@ fg = "light_green"
 bold = true
 
 [regular]
-fg = "black"
+fg = "white"
 
 [directory]
 fg = "yellow"

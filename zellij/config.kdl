@@ -2,9 +2,9 @@
 keybinds {
     normal clear-defaults=true {
         bind "Ctrl g" { SwitchToMode "locked"; }
-        bind "Ctrl h" { NewTab; }
+        bind "Ctrl k" { NewTab; }
         bind "Ctrl l" { GoToNextTab; }
-        bind "Ctrl k" { ToggleFloatingPanes; }
+        bind "Ctrl h" { ToggleFloatingPanes; }
         bind "Ctrl n" { SwitchToMode "Scroll"; }
     }
     locked {

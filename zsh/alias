@@ -5,6 +5,13 @@ alias dsc="diskonaut"
 alias gi="gitui"
 alias jj="/Users/andyjado/Projects/joshuto/target/debug/joshuto"
 alias tp="/Applications/Typora.app/Contents/MacOS/Typora" 
+alias vi="hx"
+alias vim="hx"
+
+#Aliases
+
+alias ala="hx ~/.config/zsh/alias"
+alias shua="source ~/.config/zsh/alias && echo "shua""
 
 #Action
 
@@ -13,35 +20,19 @@ alias x="exit"
 alias woyao="wget -np -r -e robots=off"
 alias ss="ssh 49.4.3.152"
 
-alias ti="cd ~/Zf/rust && ./x.py test src/test/ui/ --pass check"
-alias ta="./x.py test src/test/ui/ --pass check --keep-stage 1"
-
-alias vi="hx"
-alias vim="hx"
-
-alias xrua="cd ~/Zf/rust && ./x.py check compiler/rustc_borrowck"
 alias ha="cd /Users/andyjado/Taste/playgrun/examples/ && jj "
 alias la="cargo run --example "
 
-alias ca='pwd|pbcopy'
-alias ala="hx ~/.alias"
-alias shua="source ~/.alias && echo "shua""
-
 alias proxy='export all_proxy=socks5://127.0.0.1:7890'
 alias unproxy='unset all_proxy'
-
 
 # add date to :file
 alias duh="bash /Users/andyjado/Documents/mshell/date-pend.sh >>"
 alias ma="bash /Users/andyjado/Documents/mshell/boma.sh"
 
-# I hear :sth
-alias hear="cat >> /Users/andyjado/Documents/Diary/cat/hear.md"
-
 
 #Dir
 
-alias ck="cd /Users/andyjado/Zf/rust/compiler/rustc_borrowck && jj"
 alias chi="cd /Users/andyjado/Documents/Diary/chitto && jj"
 
 #_EOF_

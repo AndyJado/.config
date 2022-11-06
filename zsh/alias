@@ -13,6 +13,10 @@ alias vim="hx"
 alias ala="hx ~/.config/zsh/alias"
 alias shua="source ~/.config/zsh/alias && echo "shua""
 
+#Subias
+
+alias rua="cd ~/Zf/rust && source ~/.config/zsh/subias/rust && echo "shua""
+
 #Action
 
 alias x="exit"

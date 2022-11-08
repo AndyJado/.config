@@ -1,3 +1,7 @@
+# ADDR
+mip="49.4.3.152"
+alias ss="ssh $mip"
+
 #App
 
 alias zj="zellij"
@@ -16,13 +20,13 @@ alias shua="source ~/.config/zsh/alias && echo "shua""
 #Subias
 
 alias rua="cd ~/Zf/rust && source ~/.config/zsh/subias/rust && echo "shua""
+source ~/.config/zsh/subias/web
 
 #Action
 
 alias x="exit"
 
 alias woyao="wget -np -r -e robots=off"
-alias ss="ssh 49.4.3.152"
 
 alias ha="cd /Users/andyjado/Taste/playgrun/examples/ && jj "
 alias la="cargo run --example "
@@ -38,5 +42,7 @@ alias ma="bash /Users/andyjado/Documents/mshell/boma.sh"
 #Dir
 
 alias chi="cd /Users/andyjado/Documents/Diary/chitto && jj"
+
+#Webs
 
 #_EOF_

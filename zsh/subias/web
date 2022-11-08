@@ -1,0 +1,5 @@
+alias wqdy="wget -np -r -e robots=off"
+
+function chit() {
+	curl cheat.sh/$1
+}

@@ -1,4 +1,5 @@
 # ADDR
+wk_ip="10.10.14.20"
 mip="49.4.3.152"
 alias ss="ssh $mip"
 

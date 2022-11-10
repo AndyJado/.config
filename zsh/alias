@@ -22,6 +22,9 @@ alias x="exit"
 alias ala="hx ~/.config/zsh/alias"
 alias shua="source ~/.config/zsh/alias && echo "shua""
 
-source ~/.config/zsh/subias/*
+for subi in ~/.config/zsh/subias/*
+do
+	source $subi
+done
 
 #_EOF_=========================================================#

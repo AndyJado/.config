@@ -1,9 +1,9 @@
-# ADDR
+#ADDR==========================================================#
 wk_ip="10.10.14.20"
 mip="49.4.3.152"
 alias ss="ssh $mip"
 
-#App
+#App============================================================#
 
 alias zj="zellij"
 alias dsc="diskonaut"
@@ -13,37 +13,15 @@ alias tp="/Applications/Typora.app/Contents/MacOS/Typora"
 alias vi="hx"
 alias vim="hx"
 
-#Aliases
+#Old BeiJing===================================================#
+
+alias x="exit"
+
+#Aliases=======================================================#
 
 alias ala="hx ~/.config/zsh/alias"
 alias shua="source ~/.config/zsh/alias && echo "shua""
 
-#Subias
+source ~/.config/zsh/subias/*
 
-alias rua="cd ~/Zf/rust && source ~/.config/zsh/subias/rust && echo "shua""
-source ~/.config/zsh/subias/web
-
-#Action
-
-alias x="exit"
-
-alias woyao="wget -np -r -e robots=off"
-
-alias ha="cd /Users/andyjado/Taste/playgrun/examples/ && jj "
-alias la="cargo run --example "
-
-alias proxy='export all_proxy=socks5://127.0.0.1:7890'
-alias unproxy='unset all_proxy'
-
-# add date to :file
-alias duh="bash /Users/andyjado/Documents/mshell/date-pend.sh >>"
-alias ma="bash /Users/andyjado/Documents/mshell/boma.sh"
-
-
-#Dir
-
-alias chi="cd /Users/andyjado/Documents/Diary/chitto && jj"
-
-#Webs
-
-#_EOF_
+#_EOF_=========================================================#

@@ -1,5 +1,8 @@
 alias wqdy="wget -np -r -e robots=off"
 
-function chit() {
-	curl cheat.sh/$1
+alias proxy='export all_proxy=socks5://127.0.0.1:7890'
+alias unproxy='unset all_proxy'
+
+function cheat() {
+	curl cheat.sh/$1 | mdcat -p
 }

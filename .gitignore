@@ -1,12 +1,5 @@
 clash
 .DS_Store
-crev
-karabiner
-meli
 nvim/
-spotify-tui
-youtube-tui
 helix/runtime
-joshuto/preview_file.sh
-leftwm
-cheat
+karabiner

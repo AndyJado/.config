@@ -1,0 +1,39 @@
+
+# Vimium like thingy
+keymap h    MOVE_LEFT
+keymap J    MOVE_DOWN
+keymap K    MOVE_UP
+keymap l    MOVE_RIGHT
+keymap k    DOWN
+keymap j    UP
+keymap w    PREV_LINK
+keymap e    NEXT_LINK
+keymap L    NEXT
+keymap H    PREV
+keymap x    BACK
+# macOS set extern be 'open'
+keymap o    EXTERN_LINK
+
+#Helix thingy
+keymap u    UNDO
+keymap U    REDO
+keymap s    ISEARCH
+keymap C-s  SELECT_MENU
+keymap SPC  MENU
+
+# META====================
+keymap M-i  EDIT_SCREEN
+keymap M-l  LIST_MENU
+keymap M-a  ADD_BOOKMARK
+keymap M-b  VIEW_BOOKMARK
+keymap M-o  OPTIONS
+keymap M-r  REINIT
+keymap M-m  MOUSE_TOGGLE
+keymap M-c  SUBMIT
+keymap M-h  HISTORY
+
+#FIXME
+keymap a    SAVE_LINK
+keymap [    GOTO_RELATIVE
+keymap ]    GOTO
+keymap T COMMAND "GOTO https://duckduckgo.com/lite/; NEXT_LINK; GOTO_LINK"

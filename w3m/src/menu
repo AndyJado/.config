@@ -1,0 +1,10 @@
+menu Main
+ popup  "Buffer ops  >(b)"  Buffer      "b"
+ popup  "Link ops    >(l)"  Link        "lL"
+ nop    "----------------"
+ popup  "Bookmarks   >(B)"  Bookmark    "B"
+ func   "Help         (h)"  HELP        "hH"
+ func   "Options      (o)"  OPTIONS     "oO"
+ nop    "----------------"
+ func   "Quit         (q)"  QUIT        "qQ"
+end

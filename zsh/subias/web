@@ -4,5 +4,5 @@ alias proxy='export all_proxy=socks5://127.0.0.1:7890'
 alias unproxy='unset all_proxy'
 
 function cheat() {
-	curl cheat.sh/$1 | mdcat -p
+	curl -s cheat.sh/$1 | mdcat -p
 }

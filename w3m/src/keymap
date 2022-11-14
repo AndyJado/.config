@@ -1,9 +1,9 @@
 
-# Vimium like thingy
-keymap h    MOVE_LEFT
+# Vimium like thingy===========#
+keymap h    NEXT_UP
 keymap J    MOVE_DOWN
 keymap K    MOVE_UP
-keymap l    MOVE_RIGHT
+keymap l    NEXT_DOWN
 keymap k    DOWN
 keymap j    UP
 keymap w    PREV_LINK
@@ -11,29 +11,45 @@ keymap e    NEXT_LINK
 keymap L    NEXT
 keymap H    PREV
 keymap x    BACK
-# macOS set extern be 'open'
+
+# macOS=======================#
+# in config, set extern be 'open'
 keymap o    EXTERN_LINK
 
-#Helix thingy
-keymap u    UNDO
-keymap U    REDO
+#Helix and nasty thingy==================#
+keymap d COMMAND "NEXT_PAGE; CENTER_V"
+keymap u COMMAND "PREV_PAGE; CENTER_V"
+keymap (    UNDO
+keymap )    REDO
 keymap s    ISEARCH
-keymap C-s  SELECT_MENU
+keymap b    SELECT_MENU
 keymap SPC  MENU
 
-# META====================
+# META====================#
 keymap M-i  EDIT_SCREEN
-keymap M-l  LIST_MENU
 keymap M-a  ADD_BOOKMARK
 keymap M-b  VIEW_BOOKMARK
 keymap M-o  OPTIONS
-keymap M-r  REINIT
+keymap r    REINIT
 keymap M-m  MOUSE_TOGGLE
 keymap M-c  SUBMIT
 keymap M-h  HISTORY
 
-#FIXME
-keymap a    SAVE_LINK
+#FIXME==================================#
 keymap [    GOTO_RELATIVE
 keymap ]    GOTO
+keymap a    SAVE_LINK
+keymap M-k  ACCESSKEY
+keymap M-l  LINK_MENU
+keymap y    LIST_MENU
+
+#MACRO==================================#
 keymap T COMMAND "GOTO https://duckduckgo.com/lite/; NEXT_LINK; GOTO_LINK"
+
+#SHELL================================#
+keymap !    SHELL
+
+#MARK==================================#
+keymap m    MARK # set it in config first!!
+keymap ,    PREV_MARK
+keymap .    NEXT_MARK

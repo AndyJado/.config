@@ -45,6 +45,7 @@ keymap y    LIST_MENU
 
 #MACRO==================================#
 keymap T COMMAND "GOTO https://duckduckgo.com/lite/; NEXT_LINK; GOTO_LINK"
+#keymap G COMMAND "GOTO google.com; NEXT_LINK;NEXT_LINK;NEXT_LINK;NEXT_LINK;NEXT_LINK;NEXT_LINK;NEXT_LINK;NEXT_LINK;NEXT_LINK;NEXT_LINK;NEXT_LINK;NEXT_LINK;GOTO_LINK"
 
 #SHELL================================#
 keymap !    SHELL

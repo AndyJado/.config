@@ -1,0 +1,23 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = AndyJado
+	email = 101876416+AndyJado@users.noreply.github.com
+[http]
+	proxy = socks5://127.0.0.1:7890
+[https]
+	proxy = socks5://127.0.0.1:7890
+[pull]
+	ff = only
+[merge]
+	ff = only
+[core]
+	excludesfile = ~/.config/git/ignore
+	editor = hx
+[core]
+	pager = most
+[add.interactive]
+	useBuiltin = true # required for git 2.37.0

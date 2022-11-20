@@ -1,0 +1,21 @@
+% Color settings(Dark)
+%color normal lightgray black
+%color status black yellow
+%color underline brightgreen black
+%color overstrike brightblue black
+
+% Color settings(Light)
+color normal black reset
+color status black white
+color underline reset green
+color overstrike reset green
+
+% Keys
+setkey down "e"
+setkey down "E"
+setkey down "j"
+setkey down "^N"
+setkey up "y"
+setkey up "^Y"
+setkey up "k"
+setkey up "^P"

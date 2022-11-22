@@ -15,6 +15,7 @@ keymap x    BACK
 # macOS=======================#
 # in config, set extern be 'open'
 keymap o    EXTERN_LINK
+keymap O    EXTERN
 
 #Helix and nasty thingy==================#
 keymap d COMMAND "NEXT_PAGE; CENTER_V"
@@ -41,7 +42,8 @@ keymap ]    GOTO
 keymap a    SAVE_LINK
 keymap M-k  ACCESSKEY
 keymap M-l  LINK_MENU
-keymap y    LIST_MENU
+keymap I    LIST_MENU
+keymap i    LIST
 
 #MACRO==================================#
 keymap T COMMAND "GOTO https://duckduckgo.com/lite/; NEXT_LINK; GOTO_LINK"

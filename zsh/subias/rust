@@ -11,5 +11,5 @@ function pti() {
 }
 
 function puremo() {
-	git push origin HEAD:$1
+	git push --force-with-lease origin HEAD:$1
 }

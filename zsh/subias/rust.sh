@@ -1,5 +1,7 @@
 alias ha='cd ~/Taste/playgrun/examples/ && jj '
-alias la='cargo run --example '
+alias la='cargo run --example'
+alias cabi='cargo run --bin'
+# RUST_DEV=======================================================
 alias gp='git pull upstream master'
 alias pi='./x.py '
 alias ti='cd ~/Zf/rust && ./x.py test src/test/ui/ --pass check'

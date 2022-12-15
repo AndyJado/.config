@@ -36,6 +36,8 @@ newline = "⏎"
 
 [keys.normal]
 C-s = ":w"
+C-x = ":buffer-close"
+C-b = "buffer_picker"
 C-p = "rotate_view" 
 C-r = ":reload"
 w = "repeat_last_motion"

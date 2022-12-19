@@ -5,6 +5,7 @@ alias ss="ssh $mip"
 
 #App============================================================#
 
+alias repl='evcxr'
 alias zj="zellij"
 alias dsc="diskonaut"
 alias gi="gitui"

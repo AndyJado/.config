@@ -1,5 +1,9 @@
 alias sb='hx ~/.config/zsh/subias/temp.sh'
 
+function gub() {
+  $1 https://github.com/AndyJado/$2
+}
+
 function domd() {
   pandoc -f docx -t markdown $1
 };
@@ -11,6 +15,3 @@ function pan() {
 function hxit() {
   hx $(find $1 -type f)
 }
-
-# replace curl with xx in file la
-# $ awk '{sub(/curl/,"xx")}1' la

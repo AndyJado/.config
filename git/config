@@ -17,7 +17,5 @@
 [core]
 	excludesfile = ~/.config/git/ignore
 	editor = hx
-[core]
-	pager = most
 [add.interactive]
 	useBuiltin = true # required for git 2.37.0

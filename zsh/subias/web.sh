@@ -1,4 +1,4 @@
-alias wqdy="wget -np -r -e robots=off"
+alias wqdy="wget -np -c -r -e robots=off"
 
 alias proxy='export all_proxy=socks5://127.0.0.1:7890'
 alias unproxy='unset all_proxy'

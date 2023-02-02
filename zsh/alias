@@ -1,7 +1,7 @@
 #ADDR==========================================================#
 wk_ip="10.10.14.20"
 mip="49.4.3.152"
-alias ss="ssh $mip"
+alias ss="ssh root@$mip"
 alias uba='ssh root@10.10.14.29'
 
 #App============================================================#
@@ -10,8 +10,7 @@ alias repl='evcxr'
 alias zj="zellij"
 alias dsc="diskonaut"
 alias gi="gitui"
-alias jj="/Users/andyjado/Projects/joshuto/target/debug/joshuto"
-alias tp="/Applications/Typora.app/Contents/MacOS/Typora" 
+alias jj="joshuto"
 alias vi="hx"
 alias vim="hx"
 

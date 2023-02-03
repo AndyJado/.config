@@ -1,3 +1,4 @@
+alias rua='vi ~/.config/zsh/subias/rust.sh'
 alias ha='cd ~/Taste/playgrun/examples/ && jj '
 alias la='cargo run --example'
 alias cabi='cargo run --bin'

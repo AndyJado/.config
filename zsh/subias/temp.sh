@@ -16,6 +16,7 @@ function pan() {
   pandoc -s -t $1 $2
 }
 
+# buffer 写入这些文件，都看
 function hxit() {
   hx $(find $1 -type f)
 }

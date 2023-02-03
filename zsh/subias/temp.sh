@@ -1,7 +1,11 @@
 alias sb='hx ~/.config/zsh/subias/temp.sh'
 
-function gub() {
-  $1 https://github.com/AndyJado/$2
+# function gub() {
+#   $1 https://github.com/AndyJado/$2
+# }
+
+function ocr() {
+  ocrmypdf -l chi_sim+eng $1 $1
 }
 
 function domd() {

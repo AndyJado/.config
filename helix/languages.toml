@@ -5,6 +5,27 @@ source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "f7fb2
 
 [[language]]
 name = "rust"
+config.checkOnSave.overrideCommand = [
+        "python3",
+        "x.py",
+        "check",
+        "--json-output"
+    ]
+config.rustfmt.overrideCommand = [
+      "./build/host/rustfmt/bin/rustfmt",
+        "--edition=2021"
+    ]
+config.ProcMacro.server = "./build/host/stage0/libexec/rust-analyzer-proc-macro-srv"
 config.ProcMacro.enable = true
-config.cargo.features = "all"
+config.cargo.buildScripts.enable = true
+config.cargo.buildScripts.invocationLocation = "root"
+config.cargo.buildScripts.invocationStrategy = "once"
+config.cargo.buildScripts.overrideCommand = [
+        "python3",
+        "x.py",
+        "check",
+        "--json-output"
+    ]
+config.cargo.sysroot = "./build/host/stage0-sysroot"
+config.rustc.source = "./Cargo.toml"
 

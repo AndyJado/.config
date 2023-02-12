@@ -35,6 +35,8 @@ tab = "→"
 newline = "⏎"
 
 [keys.normal]
+w="expand_selection"
+backspace = "repeat_last_motion"
 C-s = ":w"
 C-x = ":buffer-close"
 C-b = "buffer_picker"

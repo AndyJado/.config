@@ -9,6 +9,10 @@ function cheat() {
 	curl -s cheat.sh/$1 | mdcat -p
 }
 
+function killp() {
+	kill $(lsof -t -i :$1)
+}
+
 # getty objects computer https://ftp.lstc.com/objects/ls-dyna/
 function getty() {
 	wget --user=$1 --password=$2 -r -np -nH --cut-dirs=1 --reject "index.html*" $3

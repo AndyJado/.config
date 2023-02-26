@@ -21,3 +21,10 @@ config.show_status_bar=true
 config.check_on_startup=true
 config.db_path="/Users/wangli/dict.db3"
 
+[[language]]
+name = "dyna"
+scope = "source.k"
+file-types = ["key","k"]
+roots = []
+injection-regex="k"
+language-server = {command = "dk-lsp"}

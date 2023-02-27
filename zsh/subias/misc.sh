@@ -5,6 +5,7 @@ function 2ascii() {
 	echo deci: $(echo "10i $1 P" | dc);
 }
 
+# *.$1 in $PWD 2 gif
 function 2gif() {
 	for i in $(fd -e $1)
 	do
@@ -12,4 +13,16 @@ function 2gif() {
 		# echo $var
 	ffmpeg -i $var.$1 -vf 'scale=-1:1000' -r 15 $var.gif
 	done
+}
+
+# 2master my-commit-msg
+function 2master() {
+	current=$(git branch --show-current)
+	git stash
+	git checkout main
+	git stash pop
+	git commit -am "$1"
+	git push
+	git checkout $current
+	git rebase main
 }

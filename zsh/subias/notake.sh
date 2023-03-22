@@ -5,6 +5,7 @@ alias chi="z chitto && jj"
 function flr() {
   z flirto
 
+  # if has dir $1
   if [ -d "$1" ]
   then
     echo $1
@@ -13,5 +14,6 @@ function flr() {
     echo "mkdir $1"
   fi
 
-  pbpaste > $1/$2.md 
+  pbpaste >> $1/$2.md 
+  echo "\n" >> $1/$2.md
 }

@@ -35,14 +35,18 @@ tab = "→"
 newline = "⏎"
 
 [keys.normal]
-w="expand_selection"
+Z="expand_selection"
+z="shrink_selection"
+W="select_prev_sibling"
+w="select_next_sibling"
 backspace = "repeat_last_motion"
 C-s = ":w"
-C-x = ":buffer-close"
 C-b = "buffer_picker"
-C-p = "rotate_view" 
+C-p = "rotate_view"
 C-r = ":reload"
-
+"+" = "increment"
+"=" = "decrement"
+"?" = "command_palette"
 
 [keys.insert]
 #j = {k = "normal_mode"}

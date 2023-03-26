@@ -5,6 +5,11 @@ function 2ascii() {
 	echo deci: $(echo "10i $1 P" | dc);
 }
 
+# search zsh histroy using rg
+function hs() {
+	fc -l 1 | rg -F $1
+}
+
 # *.$1 in $PWD 2 gif
 function 2gif() {
 	for i in $(fd -e $1)

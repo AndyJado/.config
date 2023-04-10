@@ -10,8 +10,12 @@ true-color = true
 idle-timeout = 200
 auto-pairs = true
 
+[editor.soft-wrap]
+enable = true
+
 [editor.lsp]
 display-messages = true
+display-inlay-hints = true
 
 [editor.file-picker]
 hidden = false

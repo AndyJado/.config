@@ -7,7 +7,7 @@ function 2ascii() {
 
 # search zsh histroy using rg
 function hs() {
-	fc -l 1 | rg -F $1
+	fc -ln 1 | rg -F $1
 }
 
 # *.$1 in $PWD 2 gif

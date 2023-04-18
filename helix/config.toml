@@ -39,8 +39,10 @@ tab = "→"
 newline = "⏎"
 
 [keys.normal]
-Z="expand_selection"
-z="shrink_selection"
+z="align_view_top"
+Z="align_view_center"
+t="expand_selection"
+T="shrink_selection"
 W="select_prev_sibling"
 w="select_next_sibling"
 backspace = "repeat_last_motion"

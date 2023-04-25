@@ -21,3 +21,9 @@ function spti() {
 function puremo() {
 	git push --force-with-lease origin HEAD:$1
 }
+
+function dkb() {
+	git restore source.k
+	cargo build
+	hx source.k
+}

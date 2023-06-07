@@ -9,6 +9,8 @@ mouse = false
 true-color = true
 idle-timeout = 200
 auto-pairs = true
+terminal.command = "bash"
+terminal.args = ["-c"]
 
 [editor.soft-wrap]
 enable = true

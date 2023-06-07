@@ -1,5 +1,5 @@
 remote:
-  host: "mz-compile"
+  host: "llm"
 push:
   compression: 1
 pull:

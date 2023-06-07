@@ -67,6 +67,7 @@ webm.inherit	= "video_default"
 wmv.inherit	= "video_default"
 
 ## text formats
+typ.inherit	= "text_default"
 nix.inherit	= "text_default"
 build.inherit	= "text_default"
 c.inherit	= "text_default"

@@ -1,5 +1,31 @@
 [language-server.rust-analyzer]
 command = "rust-analyzer"
+
+[language-server.rust-analyzer.config]
+checkOnSave.overrideCommand = [
+        "python3",
+        "x.py",
+        "check",
+        "--json-output"
+    ]
+rustfmt.overrideCommand = [
+      "./build/host/rustfmt/bin/rustfmt",
+        "--edition=2021"
+    ]
+ProcMacro.server = "./build/host/stage0/libexec/rust-analyzer-proc-macro-srv"
+ProcMacro.enable = true
+cargo.buildScripts.enable = true
+cargo.buildScripts.invocationLocation = "root"
+cargo.buildScripts.invocationStrategy = "once"
+cargo.buildScripts.overrideCommand = [
+        "python3",
+        "x.py",
+        "check",
+        "--json-output"
+    ]
+cargo.sysroot = "./build/host/stage0-sysroot"
+rustc.source = "./Cargo.toml"
+
 [[grammar]]
 name = "rust"
 source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "f7fb205c424b0962de59b26b931fe484e1262b35" }

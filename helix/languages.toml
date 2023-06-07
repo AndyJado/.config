@@ -1,30 +1,22 @@
 [language-server.rust-analyzer]
 command = "rust-analyzer"
 
-[language-server.rust-analyzer.config]
-checkOnSave.overrideCommand = [
-        "python3",
-        "x.py",
-        "check",
-        "--json-output"
-    ]
-rustfmt.overrideCommand = [
-      "./build/host/rustfmt/bin/rustfmt",
-        "--edition=2021"
-    ]
-ProcMacro.server = "./build/host/stage0/libexec/rust-analyzer-proc-macro-srv"
-ProcMacro.enable = true
-cargo.buildScripts.enable = true
-cargo.buildScripts.invocationLocation = "root"
-cargo.buildScripts.invocationStrategy = "once"
-cargo.buildScripts.overrideCommand = [
-        "python3",
-        "x.py",
-        "check",
-        "--json-output"
-    ]
-cargo.sysroot = "./build/host/stage0-sysroot"
-rustc.source = "./Cargo.toml"
+[language-server.ds-pinyin-lsp]
+command = "ds-pinyin-lsp"
+
+[language-server.ds-pinyin-lsp.config]
+enabled=true
+trace.server=true
+prompt=true
+show_status_bar=true
+check_on_startup=true
+db_path="/Users/wangli/dict.db3"
+
+[language-server.dkb]
+command = "dkb"
+
+[language-server.typst-lsp]
+command = "typst-lsp"
 
 [[grammar]]
 name = "rust"

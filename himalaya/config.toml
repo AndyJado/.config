@@ -1,0 +1,26 @@
+display-name = "zifan"
+downloads-dir = "~/Downloads"
+signature = "sincerely,\nZifan"
+email-listing-page-size = 50
+
+[gmail]
+default = true
+email = "frydaydeep@gmail.com"
+
+backend = "imap"
+imap-host = "imap.gmail.com"
+imap-port = 993
+imap-login = "frydaydeep@gmail.com"
+imap-passwd-cmd = "pass show gmail"
+
+sender = "smtp"
+smtp-host = "smtp.gmail.com"
+smtp-port = 465
+smtp-login = "frydaydeep@gmail.com"
+smtp-passwd-cmd = "pass show gmail"
+
+[gmail.folder-aliases]
+inbox = "INBOX"
+sent = "[Gmail]/Sent Mail"
+drafts = "[Gmail]/Drafts"
+trash = "[Gmail]/Trash"

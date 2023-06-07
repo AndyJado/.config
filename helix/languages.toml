@@ -26,10 +26,58 @@ cargo.buildScripts.overrideCommand = [
 cargo.sysroot = "./build/host/stage0-sysroot"
 rustc.source = "./Cargo.toml"
 
+[language-server.ds-pinyin-lsp]
+command = "ds-pinyin-lsp"
+
+[language-server.ds-pinyin-lsp.config]
+enabled=true
+trace.server=true
+prompt=true
+show_status_bar=true
+check_on_startup=true
+db_path="/Users/wangli/dict.db3"
+
+[language-server.dkb]
+command = "dkb"
+
+[language-server.typst-lsp]
+command = "typst-lsp"
+
 [[grammar]]
 name = "rust"
 source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "f7fb205c424b0962de59b26b931fe484e1262b35" }
+
 [[language]]
 name = "rust"
 language-servers = [ "rust-analyzer" ]
 auto-format = true
+
+[[language]]
+name = "zh"
+scope = "source.zh"
+file-types = ["zh"]
+roots = []
+injection-regex="zh"
+language-servers = [ "ds-pinyin-lsp" ]
+
+[[language]]
+name = "dyna"
+scope = "source.k"
+file-types = ["key","k"]
+roots = []
+injection-regex="k"
+language-servers = [ "dkb" ]
+
+[[language]]
+name = "typst"
+scope = "source.typst"
+injection-regex = "^typst$"
+file-types = ["typ"]
+comment-token = "//"
+indent = { tab-width = 2, unit = "  " }
+roots = []
+language-servers = [ "typst-lsp" ]
+
+[[grammar]]
+name = "typst"
+source = { path = "/Users/wangli/Documents/GitHub/editor-stf/tree-sitter-typst" }

@@ -1,10 +1,13 @@
 alias rua='vi ~/.config/zsh/subias/rust.sh'
-alias ha='cd ~/Taste/playgrun/examples/ && jj '
+# alias ha='cd ~/Taste/playgrun/examples/ && jj '
 
 # CARGO:
 alias la='cargo run --example'
+alias sla='mainframer cargo run --example'
 alias cabi='cargo run --bin'
-alias cadow='cargo install --path=.'
+alias cadow='cargo install --path=. -j8'
+alias sadow='mainframer cargo install --path=. -j64'
+
 # RUST_DEV=======================================================
 alias gp='git pull upstream master'
 alias pi='./x.py '

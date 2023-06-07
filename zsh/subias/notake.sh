@@ -10,7 +10,7 @@ function flr() {
   then
     echo $1
   else
-    mkdir $1
+    mkdir -p $1
     echo "mkdir $1"
   fi
 

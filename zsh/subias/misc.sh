@@ -1,8 +1,8 @@
 alias sumi='hx ~/.config/zsh/subias/misc.sh'
 
-function 2ascii() {
-	echo hex: $(echo "16i $1 P" | dc);
-	echo deci: $(echo "10i $1 P" | dc);
+# live watch
+function pdf() {
+	typst-live main.typ
 }
 
 # search zsh histroy using rg
@@ -23,7 +23,8 @@ function 2gif() {
 # 2master my-commit-msg
 function 2master() {
 	current=$(git branch --show-current)
-	git stash
+	git stash -S
+	git commit -am "reset later"
 	git checkout main
 	git stash pop
 	git commit -am "$1"

@@ -1,5 +1,8 @@
 # .git is required when developing rust
+.git 
 
 build
 
 target
+
+*.seo

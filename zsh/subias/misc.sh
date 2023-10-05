@@ -20,6 +20,16 @@ function 2gif() {
 	done
 }
 
+# temp
+function 2png() {
+	for i in $(fd -e $1)
+	do
+		var=${i%.*}
+		# echo $var
+	magick $var.$1 $var.png
+	done
+}
+
 # 2master my-commit-msg
 function 2master() {
 	current=$(git branch --show-current)

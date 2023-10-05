@@ -1,23 +1,6 @@
 [language-server.rust-analyzer]
 command = "rust-analyzer"
 
-[language-server.ds-pinyin-lsp]
-command = "ds-pinyin-lsp"
-
-[language-server.ds-pinyin-lsp.config]
-enabled=true
-trace.server=true
-prompt=true
-show_status_bar=true
-check_on_startup=true
-db_path="/Users/wangli/dict.db3"
-
-[language-server.dkb]
-command = "dkb"
-
-[language-server.typst-lsp]
-command = "typst-lsp"
-
 [[grammar]]
 name = "rust"
 source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "f7fb205c424b0962de59b26b931fe484e1262b35" }
@@ -53,6 +36,3 @@ indent = { tab-width = 2, unit = "  " }
 roots = []
 language-servers = [ "typst-lsp" ]
 
-[[grammar]]
-name = "typst"
-source = { path = "/Users/wangli/Documents/GitHub/editor-stf/tree-sitter-typst" }

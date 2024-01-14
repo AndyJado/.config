@@ -4,7 +4,7 @@ alias ha='cd ~/Taste/playgrun/examples/ && jj '
 # CARGO:
 alias la='cargo run --example'
 alias cabi='cargo run --bin'
-alias cadow='cargo install --path=.'
+alias dow='cargo install --path=.'
 # RUST_DEV=======================================================
 alias gp='git pull upstream master'
 alias pi='./x.py '

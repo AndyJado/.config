@@ -1,5 +1,3 @@
-alias sumi='hx ~/.config/zsh/subias/misc.sh'
-
 # live watch
 function pdf() {
 	typst-live main.typ

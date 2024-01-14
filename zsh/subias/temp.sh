@@ -1,4 +1,4 @@
-alias sb='hx ~/.config/zsh/subias/temp.sh'
+alias subi='hx ~/.config/zsh/subias/'
 
 # function gub() {
 #   $1 https://github.com/AndyJado/$2

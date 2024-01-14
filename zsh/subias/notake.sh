@@ -1,19 +1,22 @@
-alias notay="hx ~/.config/zsh/subias/notake.sh"
 alias chi="z chitto && jj"
 
 # FLIRTO: flr link pasted
 function flr() {
+  dir=$1
+  ttl=$2
+  m=$3
   z flirto
-
-  # if has dir $1
-  if [ -d "$1" ]
+  # if has dir $dir
+  if [ -d "$dir" ]
   then
-    echo $1
+    echo $dir
   else
-    mkdir -p $1
-    echo "mkdir $1"
+    mkdir -p $dir
+    echo "mkdir $dir"
   fi
 
-  pbpaste >> $1/$2.md 
-  echo "\n" >> $1/$2.md
+  pbpaste >> $dir/$ttl.md 
+  echo "\n" >> $dir/$ttl.md
+  git add .
+  git commit -m $m
 }

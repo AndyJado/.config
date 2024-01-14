@@ -39,11 +39,11 @@ tab = "→"
 newline = "⏎"
 
 [keys.normal]
-z="align_view_top"
+z="last_picker"
 Z="align_view_center"
 t="expand_selection"
 T="shrink_selection"
-W="select_prev_sibling"
+q="select_prev_sibling"
 w="select_next_sibling"
 backspace = "repeat_last_motion"
 C-s = ":w"

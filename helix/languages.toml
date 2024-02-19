@@ -1,3 +1,7 @@
+[language-server.gpt]
+command = "helix-gpt"
+args = ["--logFile","./gpt_log.lpg", "--handler", "openai","--openaiModel","gpt-3.5-turbo", "--openaiEndpoint","https://api.openai.com/v1/completions", "--openaiKey", "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" ]
+
 [language-server.rust-analyzer]
 command = "rust-analyzer"
 
@@ -6,5 +10,65 @@ name = "rust"
 source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "f7fb205c424b0962de59b26b931fe484e1262b35" }
 [[language]]
 name = "rust"
+<<<<<<< Updated upstream
 language-servers = [ "rust-analyzer" ]
 auto-format = true
+=======
+language-servers = [ "rust-analyzer","gpt" ]
+auto-format = true
+
+[[grammar]]
+name = "typst"
+source = { git = "https://github.com/uben0/tree-sitter-typst", rev = "7a2bb249fc555dbcba7d440709927614b8802969" }
+[[language]]
+name = "typst"
+scope = "source.typst"
+injection-regex = "typst"
+roots = []
+comment-token = "//"
+file-types = ["typ"]
+indent = { tab-width = 2, unit = " " }
+language-servers = [ "typst-lsp" ]
+
+[[language]]
+name = "fortran"
+scope = "source.fortran"
+injection-regex = "fortran"
+file-types = ["f","F", "for", "f90", "f95", "f03"]
+roots = ["fpm.toml"]
+comment-token = "!"
+indent = { tab-width = 4, unit = "    "}
+language-servers = [ "fortls" ]
+
+[[grammar]]
+name = "fortran"
+source = { git = "https://github.com/stadelmanma/tree-sitter-fortran", rev = "f0f2f100952a353e64e26b0fa710b4c296d7af13" }
+
+[[language]]
+name = "javascript"
+scope = "source.js"
+injection-regex = "(js|javascript)"
+language-id = "javascript"
+file-types = ["js", "mjs", "cjs", "rules", "es6", "pac", "jakefile"]
+shebangs = ["node"]
+comment-token = "//"
+language-servers = [ "typescript-language-server" ]
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "python"
+language-servers = [ "pyright", "ruff" ]
+
+[language-server.pyright.config.python.analysis]
+typeCheckingMode = "basic"
+
+[language-server.ruff]
+command = "ruff-lsp"
+
+[language-server.ruff.config.settings]
+args = ["--ignore", "E501"]
+
+[language.formatter]
+command = "black"
+args = ["--line-length", "88", "--quiet", "-"]
+>>>>>>> Stashed changes
